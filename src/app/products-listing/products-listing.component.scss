@@ -1,0 +1,45 @@
+.example-card {
+    width: 100%;
+    margin-left: 1rem;
+    justify-content: space-between;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  .main-div{
+    padding: 10px;
+    display: flex;
+    margin-top: 5rem;
+  }
+  .main-div-width{
+    width: 20%;
+  }
+  .search-icon{
+    line-height: 1.7;
+  }
+  .w-100{
+    width: 100%;
+  }
+  .category-name{
+    text-align: center;
+  }
+  .searchContainer{
+    width: 60%;
+    line-height: 3;
+  }
+  .header-container{
+    display: flex;
+  }
+  .icon-div-width{
+    width: 20%;
+  }
+  .favIcon{
+    width: 35%;
+  }
+  .search-input{
+    height: 40px;
+    width: 60%;
+  }

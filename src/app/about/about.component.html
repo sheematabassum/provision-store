@@ -1,0 +1,84 @@
+<div>
+    <mat-card>
+        <mat-toolbar color="accent"> 
+                <div class="icon-div-width">
+                    <img mat-card-image src="http://www.hindigraphics.in/wp-content/uploads/2019/01/pro.png" 
+                     alt="favIcon" class="favIcon">
+                </div>    
+        </mat-toolbar>
+    </mat-card>
+</div>
+
+<div>
+    <h2 class="heading">Project Structure:</h2>
+    <p>Note:This project is developed based on new version of angular 17.So, we all know that
+        in the latest version we have standalone components i.e, we no need to create modules for
+        each component
+    </p>
+    <h3 class="margin">src Folder:</h3>
+    <p class="margin">The src folder serves as the project’s root directory. 
+        It is crucial as it contains all the source files and resources required to develop the Angular application. Developers spend most of their time writing and modifying code in the src folder.
+        It is a central hub for all the components and other resources that comprise the application.
+    </p>
+    <h3 class="margin">app Folder</h3>
+    <p class="margin">Inside the src folder, the app folder represents the main application module. 
+        It holds the core functionality of the Angular application. 
+        The app folder contains various components, services, directives, 
+        and other resources specific to the application. Developers organize and structure their code within the app folder to build the user interface, implement business logic, and handle data manipulation.
+         This is where the majority of the application’s development takes place.
+        1.app.component.html : This contains the "router-outlet tag".
+        2.app.component.scss:component level css file
+        3.app.component.spec.ts:To write the unit test cases at component level.
+        4.app.compnent.ts:we can write here type scrpt logic like we can declare variable,
+        functions.
+        5.app-config.ts:it is used to configure the SSR.
+        6.app.rutes.ts:we can create routes for entire application.
+        </p>
+    <h3 class="margin">Login Component:</h3>
+    <p class="margin">Login Component is created for the user to login to provision store
+        it has generated  four files.
+        1.store-front.cmponent.html: By using Angular-meterial ui i have created the toolbar
+        and Reactive login form.Since it's a standalone component we don't have to create module for
+        this component.
+
+        2.store-front.component.scss: creataed some styles based on class name for the store-login-component.html.
+        3.store-front.conponent.spec.ts:To write the unit test cases at component level.
+        4.store-front.component.ts:I have created few variables and functions for the binding purpose.And also
+        created the formGroup for the "email & password".
+
+    </p>
+
+    <h3 class="margin">Product-list Component:</h3>
+    <p class="margin">
+        it has generated  four files.
+        1.Products-list.cmponent.html: By using Angular-meterial ui i have created the toolbar
+        and mat-card to display the image & product name .Since it's a standalone component we don't have to create module for
+        this component.
+        2.products-list.component.scss: creataed some styles based on class name for the store-login-component.html.
+        3.products-list.conponent.spec.ts:To write the unit test cases at component level.
+        4.products-list.component.ts:retived the product details by using login api access_token.
+    </p>
+
+    <h3 class="margin">About Component:</h3>
+    <p class="margin">only It describes the project structure & project create step by step</p>
+    <h3 class="margin">Services:</h3>
+    <p class="margin">
+        1.auth-service:login Api "https://apiv2stg.promilo.com/user/oauth/token?grant_type=password"
+        with given credentials in the assignment document.
+        2.products.service:get product list details api "https://api.kalpav.com/api/v1/product/category/retail"
+    </p>
+
+    <h3 class="margin">assests:</h3>
+    <p class="margin">In this folder we can save images,fonts & we can create json files for multiple languages</p>
+    <h3 class="margin">styles:</h3>
+    <p>It's a global scss files, in some projects this file we can treate as parent scss files.</p>
+
+    <h3 class="margin">index.html:</h3>
+    <p>this is the root file when angular application runs, in this file we can declare app-root selector.</p>
+    <h3 class="margin">main.ts:</h3>
+    <p>it is used for to bootstap the angular application.</p>
+    <h3 class="margin">package.json:</h3>
+    <p>It has the project dependencies with versions</p>
+    <h3 class="margin">node_modules:</h3>
+    <p>This folder containes  all the libraries which is intalled by npm.</p>
+</div>

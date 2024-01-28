@@ -1,0 +1,44 @@
+<div>
+    <mat-card>
+        <mat-toolbar color="accent"> 
+                <div class="icon-div-width">
+                    <img mat-card-image src="http://www.hindigraphics.in/wp-content/uploads/2019/01/pro.png" 
+                     alt="favIcon" class="favIcon">
+                </div>    
+        </mat-toolbar>
+    </mat-card>
+</div>
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-card fxFlex="25">
+        <mat-toolbar color="primary">LogIn Page</mat-toolbar>
+        <form fxLayoutAlign="stretch" fxLayout="column" class="login-form" 
+        [formGroup]="form" (ngSubmit)="login()">
+            <mat-form-field>
+             <input matInput placeholder="User Name" formControlName="email">
+            </mat-form-field>
+            <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                
+                <div *ngIf="f['email'].errors['required']" class="text-color">Email is required</div>
+                <div *ngIf="f['email'].errors['email']" class="text-color">Email must be a valid email address</div>
+            </div>
+          
+            <mat-form-field> 
+                <input matInput type="password" placeholder="Password" formControlName="password">
+              </mat-form-field>
+              <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">
+                
+                <div *ngIf="f['password'].errors['required']" class="text-color">password is required</div>
+                <div *ngIf="f['password'].errors['pattern']" class="text-color">
+                 password Incorrect
+                </div>
+                <div *ngIf="f['password'].errors['minLength']" class="text-color">
+                    Password must be at least 8 characters 
+                </div>
+            </div>
+                
+            
+              <button mat-raised-button type="submit" color="primary">Log In</button>
+          </form>
+          
+    </mat-card>
+</div>
